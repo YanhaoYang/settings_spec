@@ -1,0 +1,10 @@
+defaults: &defaults
+  l1b:
+    l2c:
+    l2d:
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults

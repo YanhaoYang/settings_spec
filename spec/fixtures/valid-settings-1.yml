@@ -1,0 +1,24 @@
+defaults: &defaults
+  l1a: 3
+  l1b:
+    l2a: abc
+    l2b: 5
+    l2c:
+      - a
+      - c
+    l2d:
+  l1c:
+    l2e: 1234
+    l2f: false
+    l2g:
+      - a
+  l1d: 9
+
+development:
+  <<: *defaults
+  l1a: 4
+  l1c:
+
+test:
+  <<: *defaults
+  l1a: 2

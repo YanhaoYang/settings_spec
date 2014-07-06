@@ -1,0 +1,18 @@
+defaults: &defaults
+  l1a: 3
+  l1b:
+    l2a: ace
+    l2b: 5
+    l2c:
+      - b
+      - c
+    l2d:
+  l1d: 6
+
+development:
+  <<: *defaults
+  l1a: 4
+
+test:
+  <<: *defaults
+  l1a: 2

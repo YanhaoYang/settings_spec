@@ -1,0 +1,18 @@
+defaults: &defaults
+  l1a: one_in [2, 3, 4]
+  l1b:
+    l2a: match /^a/
+    l2b: gt 4
+    l2c: all_in %w{a b c d}
+    l2d: blank or lt 9
+  l1c:
+    l2e: blank or match /\d{4}/
+    l2f: blank or one_in [true, false]
+    l2g: blank or all_in %w{a b c}
+  l1d: call ->(n){ n % 3 == 0}
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
