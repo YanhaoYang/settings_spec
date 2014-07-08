@@ -19,9 +19,10 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_development_dependency "bundler", "~> 1.6"
-  spec.add_development_dependency "rake", "~> 10.3.2"
-  spec.add_development_dependency "rspec", "~> 3.0.0"
-  spec.add_development_dependency "settingslogic", "~> 2.0.9"
-  spec.add_development_dependency "rails_config", "~> 0.4.2"
-  spec.add_development_dependency "app_config", "~> 2.5.1"
+  spec.add_development_dependency "rake", "~> 10.3"
+  spec.add_development_dependency "rspec", "~> 3.0"
+  spec.add_development_dependency "settingslogic", "~> 2.0"
+  spec.add_development_dependency "activesupport", "~> 3.0" # for rails_config
+  spec.add_development_dependency "rails_config", "~> 0.4"
+  spec.add_development_dependency "app_config", "~> 2.5"
 end
