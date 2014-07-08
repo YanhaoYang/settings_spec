@@ -1,6 +1,7 @@
 module SettingsSpec
   class Specs
 
+    # A Hash whose keys are the keys of the invalid entries joined by "."
     attr_reader :errors
 
     def initialize(specs)
@@ -8,14 +9,23 @@ module SettingsSpec
       @errors = {}
     end
 
+    # Verifies the +settings+ against the specifications having been loaded.
+    #
+    # +settings+ can be a Hash, or any object responding to <tt>:[]</tt> or
+    # keys in the settings.
+    #
+    # Returns +true+ if there is no error, +false+ if there are errors. Errors can
+    # be accessed by <tt>Specs#errors</tt>.
     def verify(settings)
       if settings
         check([], @specs, settings)
       else
         @errors['.'] = 'Settings is a nil?!'
       end
+      @errors.empty?
     end
 
+    # Same as <tt>Specs#verify</tt>, but raises an exception when the settings are invalid.
     def verify!(settings)
       verify(settings)
       unless @errors.empty?
