@@ -1,5 +1,7 @@
 # SettingsSpec
 
+[![Build Status](https://travis-ci.org/YanhaoYang/settings_spec.svg?branch=master)](https://travis-ci.org/YanhaoYang/settings_spec)
+
 There are many tools to load configurations in Rails, such as
 [rais\_config](https://github.com/railsconfig/rails_config),
 [settingslogic](https://github.com/binarylogic/settingslogic).
