@@ -106,7 +106,7 @@ Suppose the specification file is loaded this way:
 
 ## Contributing
 
-1. Fork it ( https://github.com/YanhaoYang/settings\_spec/fork )
+1. Fork it [https://github.com/YanhaoYang/settings\_spec/fork](https://github.com/YanhaoYang/settings_spec/fork)
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
