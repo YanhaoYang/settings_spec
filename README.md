@@ -24,6 +24,9 @@ you write rules to validate the configuration file, so that you know
 the configuration file is all right before an invalid configuration
 file breaks the application.
 
+It is tested on Ruby 1.9.3, 2.1.2. It should also work on Ruby 1.8.7,
+but you have to use `lambda` rather than `->`.
+
 ## Installation
 
 Add this line to your application's Gemfile:
